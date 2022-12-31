@@ -1,7 +1,7 @@
 # owoify ^w^
 *because enough is never enough*  
 
-This is a Java port of the owoify library based off of [mohan-cao's owoify-js](https://github.com/mohan-cao/owoify-js) and [deadshot465's owoify-py](https://raw.githubusercontent.com/deadshot465/owoify-py), because I decided the current options I saw on Java weren't enough.  
+This is a Java port of the owoify library based off of [mohan-cao's owoify-js](https://github.com/mohan-cao/owoify-js) and [deadshot465's owoify-py](https://github.com/deadshot465/owoify-py), because I decided the current options I saw on Java weren't enough.  
 
 ## API Usage
 `Owoify` is the main class and really the only class you'd want to use.  
