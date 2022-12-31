@@ -23,13 +23,13 @@ Owoify.owoify("You look like a cute femboy.", OwoLevel.UVU);
 First, add JitPack to your repositories...  
 ```groovy
 repositories {
-    ...
+    // ...
     maven { url "https://jitpack.io" }
 }
 ```
 ```xml
 <repositories>
-    ...
+    <!-- ... -->
     <repository>
         <id>jitpack.io</id>
         <url>https://jitpack.io</url>
@@ -39,12 +39,13 @@ repositories {
 Then add the library as follows...  
 ```groovy
 dependencies {
-    ...
+    // ...
     implementation "com.github.supern64:owoify:VERSION" // refer to badge above, or use master-SNAPSHOT
 }
 ```
 ```xml
 <dependency>
+    <!-- ... -->
     <groupId>com.github.supern64</groupId>
     <artifactId>owoify</artifactId>
     <version>VERSION</version> <!-- refer to badge above, or use master-SNAPSHOT -->
