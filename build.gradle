@@ -1,9 +1,11 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
-group 'com.github.supern64'
-version '1.0.0'
+group = 'com.github.supern64'
+version = '1.0.0'
+
 compileJava.options.encoding = 'UTF-8'
 javadoc.options.encoding = 'UTF-8'
 
@@ -25,9 +27,22 @@ java {
     withJavadocJar()
 }
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
 tasks.named('jar') {
     manifest {
         attributes('Implementation-Title': project.name,
                 'Implementation-Version': project.version)
     }
+}
+
+wrapper {
+    gradleVersion = "7.4"
+    distributionType = Wrapper.DistributionType.ALL
 }
